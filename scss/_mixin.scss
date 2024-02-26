@@ -1,0 +1,10 @@
+@mixin jflex($jcontent) {
+    display: flex;
+    justify-content: $jcontent;
+}
+
+@mixin dflex ($fdirection,$alignitem) {
+    display: flex;
+    flex-direction: $fdirection;
+    align-items: $alignitem;
+}

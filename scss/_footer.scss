@@ -1,0 +1,28 @@
+footer {
+    background-color: #86ad23;
+    max-width: 100%;
+    color: #fff;
+    margin: 10px;
+}
+
+.custom-footer {
+    text-align: center;
+}
+
+.custom-footer img {
+    margin: 0;
+    max-width: 40px;
+    height: auto;
+}
+
+.texto-footer {
+    background-color: #56aeb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-footer p {
+    margin: 0;
+}
