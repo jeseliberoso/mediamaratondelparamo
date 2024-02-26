@@ -1,0 +1,62 @@
+.negrilla {
+    font-weight: bold;
+    color: #86ad23;
+}
+
+#negrilla2 {
+    font-weight: bold;
+    color: #86ad23;
+    text-align: center;
+}
+
+.parrafo {
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    margin: 15px;
+    text-align: justify;
+}
+
+.inscripcion-containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #56aeb3;
+    width: 80vw;
+
+    .inscripcion-box {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        border: 2px solid #56aeb3;
+        padding: 10px;
+        background-color: #56aeb3;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+            margin-bottom: 20px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .inscripcion-texto {
+            a {
+                align-items: center;
+                color: #008000;
+                font-weight: bold;
+                font-size: 16px;
+                margin-left: 20px;
+
+                &:hover {
+                    color: #cd461d;
+                }
+            }
+        }
+
+    }
+}

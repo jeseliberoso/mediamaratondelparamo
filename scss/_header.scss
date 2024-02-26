@@ -1,0 +1,31 @@
+header {
+    background-color: #56aeb3;
+    color: #fff;
+    padding: 20px 0;
+
+    .imagen-logo {
+        img {
+            max-width: 150px;
+        }
+    }
+
+    nav {
+        .navbar-nav {
+            .nav-link {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 120%;
+                font-family: Segoe UI, sans-serif;
+
+                &:hover {
+                    color: #cd461d;
+                }
+            }
+
+
+        }
+
+
+    }
+
+}

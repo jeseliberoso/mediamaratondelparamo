@@ -1,0 +1,25 @@
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.box {
+    animation: slide-in 2000ms;
+    background-color:rgb(134, 173, 35);
+    width: 30%;
+    height: auto;
+    @include dflex(center,center);
+    
+    p {
+        color: #fff; 
+        margin: 10px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+}
