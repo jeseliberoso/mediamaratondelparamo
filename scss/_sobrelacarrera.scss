@@ -10,11 +10,32 @@
 }
 
 .parrafo {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #cd461d;
+    width: fit-content;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     max-width: 95%;
-    margin: 15px;
+    margin: 15px auto;
     text-align: justify;
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        text-align: center;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .inscripcion-containers {

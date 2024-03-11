@@ -1,8 +1,8 @@
 /*GALERIA*/
 
 iframe {
-    width: 80%;
-    height: 450px;
+    width: 100%;
+    height: 500px;
     margin: 20px;
 }
 
@@ -11,25 +11,8 @@ iframe {
     width: 100px;
 }
 
-/*ANIMACIÓN 1
 .animacion1 {
-    h1 {
-        color: #cd461d;
-        font-size: 50px;
-        font-weight: bold;
-        letter-spacing: 6px;
 
-        span {
-            transition: .5s linear;
-        }
-
-        &:hover span:nth-child(1):after{
-            margin-right: 3px ;
-        }
-    }*/
-
-.animacion1 {
-    
     position: relative;
     overflow: hidden;
     width: fit-content;
@@ -43,10 +26,10 @@ iframe {
         left: 0;
         transform: translateX(0);
         transition: transform 4s;
-        
+
         &:hover {
             transform: translateX(calc(100% - 100vw));
-            
+
         }
     }
 
@@ -59,23 +42,24 @@ iframe {
 
 .gradiente1 {
     margin: 10px;
-        .radial {
-            background: radial-gradient(circle, rgba(59, 173, 179, 0.726), #fff);
-            height: 80px;
-            @include dflex(center,center);
-            justify-content: center;
-        }
 
-        a {
-            align-items: center;
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 30px;
-            margin-left: 20px;
-
-            &:hover {
-                color: #cd461d;
-            }
-        }
-
+    .radial {
+        background: radial-gradient(circle, rgba(59, 173, 179, 0.726), #fff);
+        height: 80px;
+        @include dflex(column, center);
+        justify-content: center;
     }
+
+    a {
+        align-items: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 20px;
+
+        &:hover {
+            color: #cd461d;
+        }
+    }
+
+}
