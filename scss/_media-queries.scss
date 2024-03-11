@@ -1,6 +1,6 @@
 /*MEDIA QUERIE NAV BAR*/
 
-@media (min-width: 300px) {
+@media (min-width: 300px) and (max-width: 768px) {
     .navbar {
         max-width: 100%;
         justify-content: center;
@@ -9,9 +9,6 @@
     .navbar-nav {
         text-align: center;
         @include dflex(column, center);
-        /*display: flex;
-        flex-direction: column;
-        align-items: center;*/
     }
 
     .navbar-nav .nav-item {
@@ -25,37 +22,35 @@
         text-align: center;
     }
 
-    @media (min-width: 768px) {
-        .navbar {
-            max-width: 100%;
-            @include jflex(center);
-            /*display: flex;
-            justify-content: center;*/
-        }
+}
 
-        .navbar-nav {
-            text-align: center;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .navbar-nav .nav-item {
-            font-size: 16px;
-            margin-bottom: 8px;
-        }
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        max-width: 100%;
+        @include jflex(center);
     }
 
-    @media (min-width: 992px) {
-        .imagen-logo img {
-            max-width: 200px;
-        }
+    .navbar-nav {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .navbar-nav .nav-item {
-            display: inline-block;
-        }
+    .navbar-nav .nav-item {
+        font-size: 16px;
+        margin-bottom: 8px;
     }
 }
 
+@media (min-width: 992px) {
+    .imagen-logo img {
+        max-width: 200px;
+    }
+
+    .navbar-nav .nav-item {
+        display: inline-block;
+    }
+}
 
 /* MEDIA QUERIES INSCRIPCION */
 
@@ -73,9 +68,6 @@
 @media (min-width: 576px) and (max-width: 992px) {
     .inscripcion-containers {
         @include dflex(column, center);
-        /*display: flex;
-        flex-direction: column;
-        align-items: center;*/
         width: 80%;
     }
 
@@ -87,15 +79,17 @@
     .inscripcion-box img {
         max-width: 80%;
         height: auto;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.25);
+        }
     }
 }
 
 @media (min-width: 300px) and (max-width: 575px) {
     .inscripcion-containers {
         @include dflex(column, center);
-        /*display: flex;
-        flex-direction: column;
-        align-items: center;*/
     }
 
     .inscripcion-box {
@@ -111,6 +105,12 @@
     .inscripcion-box img {
         max-width: 100%;
         height: auto;
+
+
+        &:hover,
+        &:focus {
+            transform: scale(1.25);
+        }
     }
 }
 
@@ -124,13 +124,32 @@
         .columna-izquierda,
         .columna-derecha {
             width: 100%;
+        }
 
+        .informacion-expo2 {
+            flex-direction: column;
+            gap: 10px;
+
+            .columna-izquierda,
+            .columna-derecha {
+                width: 100%;
+            }
         }
     }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
     .informacion-expo {
+        flex-direction: column;
+        gap: 15px;
+
+        .columna-izquierda,
+        .columna-derecha {
+            width: 100%;
+        }
+    }
+
+    .informacion-expo2 {
         flex-direction: column;
         gap: 15px;
 
@@ -162,13 +181,17 @@
         display: block;
     }
 
-    .formulario-parte input,
-    .formulario-parte select,
-    .formulario-parte ul {
-        width: 100%;
-    }
-
     .formulario-parte button {
         margin-top: 10px;
+    }
+}
+
+/*YOUTUBE*/
+
+@media (max-width: 575px) {
+    iframe {
+        width: 100%;
+        height: 200px;
+        margin: 0;
     }
 }

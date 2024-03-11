@@ -8,11 +8,8 @@
 
     .columna-izquierda,
     .columna-derecha {
-        width: 48%;
-
-        &.columna-derecha {
-            padding-right: 10px;
-        }
+        width: 50%;
+        padding: 20px;
 
         img {
             width: 100%;
@@ -37,6 +34,51 @@
 
     &:hover,
     &:focus {
-        transform: scale(4);
+        transform: scale(2);
+    }
+}
+
+.informacion-expo2 {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .columna-izquierda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 400px;
+            object-fit: cover;
+        }
+
+    }
+
+    .columna-izquierda,
+    .columna-derecha {
+        width: 50%;
+        padding: 20px;
+    }
+
+    #listaid {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.inscripcion-box img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    transition: transform 2s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        transform: scale(2);
     }
 }
